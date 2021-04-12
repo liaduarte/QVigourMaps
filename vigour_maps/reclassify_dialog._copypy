@@ -1,0 +1,84 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'reclassify_dialog.ui'
+#
+# Created by: PyQt5 UI code generator 5.11.3
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_Dialog(object):
+    def setupUi(self, Dialog):
+        Dialog.setObjectName("Dialog")
+        Dialog.resize(516, 398)
+        self.gridLayoutWidget = QtWidgets.QWidget(Dialog)
+        self.gridLayoutWidget.setGeometry(QtCore.QRect(20, 20, 481, 331))
+        self.gridLayoutWidget.setObjectName("gridLayoutWidget")
+        self.gridLayout = QtWidgets.QGridLayout(self.gridLayoutWidget)
+        self.gridLayout.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout.setObjectName("gridLayout")
+        self.tableWidget = QtWidgets.QTableWidget(self.gridLayoutWidget)
+        self.tableWidget.setMinimumSize(QtCore.QSize(0, 0))
+        self.tableWidget.setObjectName("tableWidget")
+        self.tableWidget.setColumnCount(3)
+        self.tableWidget.setRowCount(5)
+        self.newItem = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(0, self.newItem)
+        self.newItem = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(1, self.newItem)
+        self.newItem = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(2, self.newItem)
+        self.line = QtWidgets.QLineEdit("")
+        item = QtWidgets.QTableWidgetItem(self.line.text())
+        self.tableWidget.setItem(0,0, item)
+        self.line = QtWidgets.QLineEdit("")
+        item = QtWidgets.QTableWidgetItem(self.line.text())
+        self.tableWidget.setItem(0,1, item)
+        self.line = QtWidgets.QLineEdit("")
+        item = QtWidgets.QTableWidgetItem(self.line.text())
+        self.tableWidget.setItem(0,2, item)
+        self.line = QtWidgets.QLineEdit("")
+        item = QtWidgets.QTableWidgetItem(self.line.text())
+        self.tableWidget.setItem(0,3, item)
+        self.line = QtWidgets.QLineEdit("")
+        item = QtWidgets.QTableWidgetItem(self.line.text())
+        self.tableWidget.setItem(0,4, item)
+        self.line = QtWidgets.QLineEdit("")
+        item = QtWidgets.QTableWidgetItem(self.line.text())
+        self.tableWidget.setItem(0,5, item)
+        self.line = QtWidgets.QLineEdit("")
+        item = QtWidgets.QTableWidgetItem(self.line.text())
+        self.tableWidget.setItem(1,0, item)
+        self.line = QtWidgets.QLineEdit("")
+        item = QtWidgets.QTableWidgetItem(self.line.text())
+        self.tableWidget.setItem(1,2, item)
+        self.gridLayout.addWidget(self.tableWidget, 0, 0, 1, 1)
+        self.gridLayoutWidget_2 = QtWidgets.QWidget(Dialog)
+        self.gridLayoutWidget_2.setGeometry(QtCore.QRect(340, 350, 160, 41))
+        self.gridLayoutWidget_2.setObjectName("gridLayoutWidget_2")
+        self.gridLayout_3 = QtWidgets.QGridLayout(self.gridLayoutWidget_2)
+        self.gridLayout_3.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_3.setObjectName("gridLayout_3")
+        self.pushButton = QtWidgets.QPushButton(self.gridLayoutWidget_2)
+        self.pushButton.setObjectName("pushButton")
+        self.gridLayout_3.addWidget(self.pushButton, 0, 0, 1, 1)
+        self.pushButton_2 = QtWidgets.QPushButton(self.gridLayoutWidget_2)
+        self.pushButton_2.setObjectName("pushButton_2")
+        self.gridLayout_3.addWidget(self.pushButton_2, 0, 1, 1, 1)
+
+        self.retranslateUi(Dialog)
+        QtCore.QMetaObject.connectSlotsByName(Dialog)
+
+    def retranslateUi(self, Dialog):
+        _translate = QtCore.QCoreApplication.translate
+        Dialog.setWindowTitle(_translate("Dialog", "Reclassify"))
+        item = self.tableWidget.horizontalHeaderItem(0)
+        item.setText(_translate("Dialog", "Minimum"))
+        item = self.tableWidget.horizontalHeaderItem(1)
+        item.setText(_translate("Dialog", "Maximum"))
+        item = self.tableWidget.horizontalHeaderItem(2)
+        item.setText(_translate("Dialog", "New value"))
+        self.pushButton.setText(_translate("Dialog", "Ok"))
+        self.pushButton_2.setText(_translate("Dialog", "Cancel"))
+
